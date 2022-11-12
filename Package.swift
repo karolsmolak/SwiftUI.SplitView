@@ -11,7 +11,7 @@ let package = Package(
             targets: ["SplitView"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/karolsmolak/SequenceBuilder", from: "0.0.7"),
+        .package(url: "https://github.com/karolsmolak/SequenceBuilder", branch: "main"),
     ],
     targets: [
         .target(
