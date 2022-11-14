@@ -13,7 +13,7 @@ public struct SplitView<Content: Collection>: View  where Content.Element: View,
 
     public init(
         orientation: Binding<SplitViewOrientation> = .constant(.horizontal),
-        dividerColor: Color = Color(NSColor.separatorColor),
+        dividerColor: Color = .secondary,
         dividerThickness: Double = 10,
         @SequenceBuilder content: () -> Content)
     {
@@ -25,7 +25,7 @@ public struct SplitView<Content: Collection>: View  where Content.Element: View,
 
     public init(
         orientation: SplitViewOrientation = .horizontal,
-        dividerColor: Color = Color(NSColor.separatorColor),
+        dividerColor: Color = .secondary,
         dividerThickness: Double = 10,
         @SequenceBuilder content: () -> Content
     ) {
